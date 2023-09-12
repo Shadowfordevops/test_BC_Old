@@ -1,0 +1,50 @@
+{
+    "name": "HelloWorld.AppSource",
+    "memoryLimit": "6G",
+    "installApps": "",
+    "previousApps": "https://businesscentralapps.azureedge.net/githubhelloworld-appsource/latest/apps.zip",
+    "appFolders": "app,base",
+    "testFolders": "test",
+    "installTestRunner": true,
+    "installTestFramework": false,
+    "installTestLibraries": false,
+    "installPerformanceToolkit": false,
+    "doNotSignApps": true,
+    "enableCodeCop": false,
+    "enableAppSourceCop": true,
+    "enablePerTenantExtensionCop": false,
+    "enableUICop": true,
+    "useDefaultAppSourceRuleSet": true,
+    "appSourceCopMandatoryAffixes": "hw_",
+    "appSourceCopSupportedCountries": "us,dk,gb",
+    "additionalCountries": "dk,gb",
+    "bcContainerHelperVersion": "dev",
+    "vaultNameForLocal": "BuildVariables",
+    "versions": [
+        {
+            "version": "ci",
+            "artifact": "//18.2.26217.26754/us",
+            "additionalCountries": "",
+            "cacheImage": true,
+            "CreateRuntimePackages": true
+        },
+        {
+            "version": "current",
+            "artifact": "///us/Current",
+            "CreateRuntimePackages": true
+        },
+        {
+            "version": "cloud",
+            "additionalCountries": "",
+            "artifact": "///us/Current"
+        },
+        {
+            "version": "nextmajor",
+            "artifact": "///us/NextMajor/{INSIDERSASTOKEN}"
+        },
+        {
+            "version": "nextminor",
+            "artifact": "///us/NextMinor/{INSIDERSASTOKEN}"
+        }
+    ]
+}
